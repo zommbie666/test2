@@ -1,0 +1,13 @@
+-- autofarm c1.txt (on GitHub)
+local url = "https://raw.githubusercontent.com/zommbie666/test/refs/heads/main/autofarm%20c1.txt"
+
+-- Queue this same loadstring on teleport
+local q = queue_on_teleport or syn and syn.queue_on_teleport
+if q then
+    q(("loadstring(game:HttpGet('%s', true))()"):format(url))
+end
+
+-- Now run the actual script logic
+-- (put your autofarm code below this)
+print("✅ Autofarm script is running!")
+-- Your autofarm logic here
